@@ -1,7 +1,7 @@
 {
   "name": "express-boilerplate",
   "version": "1.0.0",
-  "description": "A simple boileplate for express websites",
+  "description": "Website",
   "main": "app.js",
   "scripts": {
     "prod": "node ./app.js",
@@ -9,7 +9,7 @@
     "start": "concurrently \"npm run watch\" \"npm run assets\" --names \"💻,📦\" --prefix name",
     "assets": "webpack -w --display-max-modules 0"
   },
-  "author": "Dominik Hanke",
+  "author": "Bjarne",
   "license": "MIT",
   "dependencies": {
     "bootstrap": "^4.0.0",
