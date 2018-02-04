@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "description": "Website",
   "main": "app.js",
-  "scripts": {
-    "prod": "node ./app.js",
+    "scripts": {
+    "start": "node ./app.js",
     "watch": "nodemon ./app.js --ignore public/",
-    "start": "concurrently \"npm run watch\" \"npm run assets\" --names \"💻,📦\" --prefix name",
-    "assets": "webpack -w --display-max-modules 0"
+    "assets": "webpack -w --display-max-modules 0",
+    "dev": "concurrently \"npm run watch\" \"npm run assets\" --names \"💻,📦\" --prefix name"
   },
   "author": "Bjarne",
   "license": "MIT",
