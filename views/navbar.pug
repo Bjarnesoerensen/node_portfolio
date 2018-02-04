@@ -1,0 +1,47 @@
+nav.navbar.navbar-expand-lg.navbar-light
+    .container
+        a.navbar-brand(href="/") Dominik Hanke
+        button.navbar-toggler(
+            type="button",
+            data-toggle="collapse",
+            data-target="#navbarSupportedContent",
+            aria-controls="navbarSupportedContent",
+            aria-expanded="false",
+            aria-label="Toggle navigation"
+        )
+            span.navbar-toggler-icon
+
+        .collapse.navbar-collapse#navbarSupportedContent
+            ul.navbar-nav.ml-auto
+                each entry in helpers.navigation
+                    li.nav-item
+                        a.nav-link(
+                            href=`${entry.href}`,
+                            class=(currentPath === entry.href ? 'active' : '')
+                        ) #{entry.name}
+
+                                  nav.navbar.navbar-expand-lg.navbar-light.bg-white.fixed-top
+            a.navbar-brand(href='#') BRS
+                button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNav', aria-controls='navbarNav', aria-expanded='false', aria-label='Toggle navigation')
+                  span.navbar-toggler-icon
+                ul.navbar-nav.ml-auto
+                  each item in helpers.navigation
+                      li.nav-item
+                        a.nav-link.left(href=`${item.href}`) #{item.name}
+
+                            block header                 
+      .container-fluid
+        nav.navbar.navbar-expand-lg.navbar-light.bg-white.fixed-top
+          a.navbar-brand-left(href='#') BRS
+            button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNav', aria-controls='navbarNav', aria-expanded='false', aria-label='Toggle navigation')
+            span.navbar-toggler-icon
+              ul.navbar-nav.ml-auto
+                each item in helpers.navigation
+                  li.nav-item
+                    a.nav-link.left(href=`${item.href}`) #{item.name}
+              ul.navbar-nav.ml-auto
+                li.nav-item
+                  a.fa.fa-codepen.fa-2x(href='https://codepen.io/Bjarnesoerensen/')
+                    a.fa.fa-github.fa-2x(href='http://www.github.com')
+                      a.fa.fa-twitter.fa-2x(href='http://www.twitter.com')
+                        a.fa.fa-slack.fa-2x(href='http://www.slack.com')

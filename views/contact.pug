@@ -1,0 +1,59 @@
+extends layout
+
+block content
+
+  section.section
+    .container
+      .row
+        .col-sm-12
+          .text-center
+            h1 lets get in contact
+            img.contactpic(src='images/brand.jpeg')
+      // end row
+      .row
+        .col-sm-6
+          .feat-description
+            form#message-form
+              .form-group
+                label(for='name') Name:
+                input#name.form-control(type='text', name='name')
+              .form-group
+                label(for='email') Email:
+                input#email.form-control(type='text', name='email')
+              .form-group
+                label(for='phone') Phone:
+                input#phone.form-control(type='text', name='phone')
+              .form-group
+                label(for='message') Message:
+                textarea#message.form-control(name='message')
+              .form-group
+                button.btn.btn-success(type='submit')
+                  i.fa.fa-angle-right
+                  |                                 send message
+        .col-sm-5
+          p
+            | You're not going to hit a ridiculously long phone
+            | menu when you contact me! - cause I dont have a phone.
+            | Your email isn't going to the inbox abyss, never to be seen
+            | or heard from again.
+            | At "BRS" I provide the exceptional service
+            | I'd want to experience myself!
+            | Mostly none!
+          p
+            | You're not going to hit a ridiculously long phone
+            | menu when you contact me! - cause I dont have a phone.
+            | Your email isn't going to the inbox abyss, never to be seen
+            | or heard from again.
+            | At "BRS" I provide the exceptional service
+            | I'd want to experience myself!
+            | Mostly none!
+          p
+            | You're not going to hit a ridiculously long phone
+            | menu when you contact me! - cause I dont have a phone.
+            | Your email isn't going to the inbox abyss, never to be seen
+            | or heard from again.
+            | At "BRS" I provide the exceptional service
+            | I'd want to experience myself!
+            | Mostly none!
+      // end row
+    // end container

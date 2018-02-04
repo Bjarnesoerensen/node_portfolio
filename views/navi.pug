@@ -1,0 +1,28 @@
+extends content
+
+block header
+
+    .container-fluid
+    nav.navbar.navbar-expand-lg.navbar-light.bg-white.fixed-top
+        a.navbar-brand(href='#') BRS
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNav', aria-controls='navbarNav', aria-expanded='false', aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+        #navbarNav.collapse.navbar-collapse.ml-auto
+        ul.navbar-nav
+            li.nav-item
+            a.nav-link(href='index.html')
+                | Home
+                span.sr-only (current)
+            li.nav-item
+            a.nav-link(href='about.html') About
+            li.nav-item
+            a.nav-link(href='projects.html') Projects
+            li.nav-item
+            a.nav-link(href='contact.html') Contact
+        ul.navbar-nav.ml-auto
+            li
+            a.fa.fa-codepen.fa-2x(href='https://codepen.io/Bjarnesoerensen/')
+            a.fa.fa-github.fa-2x(href='http://www.github.com')
+            a.fa.fa-twitter.fa-2x(href='http://www.twitter.com')
+            a.fa.fa-slack.fa-2x(href='http://www.slack.com')
+                    

@@ -1,0 +1,150 @@
+extends layout
+
+block content
+    .body.bkimg
+        .jumbotron
+            .container
+                h1 Hi, I am Bjarne!
+                    |         
+                    h2 I am getting serious with some very special ladies called
+                    h2 HTML5, CSS3, JavaScript, JQuery,
+                    h2 Node.js, Bootstrap, GitHub!
+                    
+                    h2
+                    button.btn.btn-primary.btn-lg(type='button', data-toggle='modal', data-target='#exampleModalLong')
+                        | Contact me
+                    
+           
+    .container-fluid
+        .container
+            // Example row of columns
+            .row
+                .col-md-4
+                    .card
+                        .card-body
+                        h2.card-text
+                            i.fa.fa-quote-left.fa-1x
+                            | First steps in development
+                            |           
+                        p.card-text
+                                | This is my playground, testing and shapening my newest skills.. it will keep improving, as
+                                | there is room for improvement!
+                                br
+                                |             
+                                br
+                                | HTML and CSS have been the building blocks for static websites, that
+                                | contain structured content and can be read by browsers and users.
+                                |             
+                                br
+                                |             
+                                br
+                                | To extend the basic HTML structure with dynamic features, like forms
+                                | that do math calculations, scrolling effects or animations, very soon JavaScript is coming to the rescue.
+                                |         
+                .col-md-4
+                    .card
+                        img.main-picture(src='/images/startup.jpg', alt='...')
+                        |             
+                        .card-body
+                            h2
+                        i.fa.fa-superpowers.fa-1x
+                        h4 Flow-Chart
+                        |               
+                        p.card-text
+                        | With a flowchart we get visual representation of the sequence of steps and decisions needed to perform the task
+                        | with success. 
+                        br
+                        |                 And it allows anyone to view the flowchart and logically follow the process from beginning to end. With proper design and construction, it communicates the steps in a process very effectively and efficiently.
+                |         
+                .col-md-4
+                    h2 
+                    img.vip-picture(src="/images/VIP.jpg", alt='...')
+                    |  - Area
+                    |           
+                    p
+                    | If you have obtained the access information to the VIP-Area of this webpage, you can enter your personal username and password below!
+                    br
+                    br
+                    |             Hint: like Unicorns? - just type &quot;jeff&quot;
+                    |     
+                    center
+                    form.form
+                        label.sr-only(for='inputUsername') Username
+                        |         
+                        input#username1.form-control(placeholder='Username', required='', type='text')
+                        |           
+                        br
+                        |         
+                        label.sr-only(for='inputPassword') Password
+                        |         
+                        input#password1.form-control(placeholder='Password', required='', type='password')
+                        |           
+                        br
+                        |         
+                        button#vip.btn.btn-sm.btn-primary(type='button', value='login', onclick='passWord();') Sign in
+                    |     
+                    
+                |       
+                hr
+                |       
+            .row
+                .col-lg-6
+                    .counterthing
+                    h4
+                    i.fa.fa-clock-o.fa-1x
+                    | Count-Down!
+                    |           
+                    p#counter
+                    |           
+                    p Days left until we are done with the education!
+                    |           
+                    h4
+                    i.fa.fa-git.fa-1x
+                    | Git and Version Control
+                    |           
+                    p
+                    | Version control systems are everywhere today, as they offer an easy
+                    | but powerful way to store versions of your code and work on the same
+                    | code base with a team of developers.
+                    |           
+                    h4
+                    i.fa.fa-terminal.fa-1x
+                    | NodeJS &amp; Express
+                    |           
+                    p
+                    | The NodeJS &amp; Express stack is offering powerful tools for the backend,
+                    | to build APIs that will be used by React later.
+                    | Beginning with the concept of client-server communication followed by
+                    | the core concepts of Node.js, the participants learn to build backend
+                    | applications with JavaScript.
+                |         
+                .col-lg-6
+                    h4
+                    i.fa.fa-university.fa-1x
+                    | Digital Career Institute
+                    |           
+                    p
+                    | Currently I am a student at the DGI in Berlin. The place to go, 
+                    br
+                    |  if you want to sharpen your skills within
+                    |           the area of web-development.
+                    |           
+                    h4
+                    i.fa.fa-ravelry.fa-1x
+                    | SQLite
+                    |           
+                    p
+                    | SQLite with Sequelize as an easy ORM (Object-relational mapping) is
+                    | used to store, update and delete data in a relational database. The
+                    | participants learn how to read and update data based on conditions and
+                    | how relational associations work..
+                    |           
+                    h4
+                    i.fa.fa-user-circle.fa-1x
+                    | MongoDB
+                    |           
+                    p
+                    | MongoDB is used as a second database, to learn about the NoSQL concept
+                    | with schemas, models and documents. The participants learn how to
+                    | create, update and delete entries and how to filter entries based on
+                    | conditions, like they did for SQLite.

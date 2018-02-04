@@ -1,0 +1,120 @@
+extends layout
+
+block content
+
+  .container-fluid
+    .subheader.text-center
+      h2 The About Page!
+      p
+        | a couple of things about development
+    .container-fluid
+      .container
+        .row.marketing
+          .col-lg-6
+            h4
+              i.fa.fa-hashtag.fa-1x
+              | Motivation
+            p
+              | Facing the challenges of modern web development, where different
+              | devices, like desktop computers, tablets, mobile phones and even smart
+              | TVs, access the web, the participants need a powerful tool to improve
+              | their layouts.
+              | This is the time for frontend frameworks to join the game. The very
+              | famous Bootstrap framework, that is created and maintained by Twitter,
+              | is used to build responsive websites that scale to the screen size and
+              | enhance the user experience on all devices..
+            h4
+              i.fa.fa-sitemap.fa-1x
+              | Subheading
+            p
+              | Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.
+            h4
+              i.fa.fa-university.fa-1x
+              | Subheading
+            p Maecenas sed diam eget risus varius blandit sit amet non magna.
+          .col-lg-6
+            h4
+              i.fa.fa-university.fa-1x
+              | Education in Development
+            p
+              | Beginning with the basic concepts of the language, talking about
+              | Variables, Loops and more, the participants learn the basic principles
+              | of programming based on the modern version of JavaScript (ES6).
+              | As soon as the basic toolset is known and lots of exercises have been
+              | done, the manipulation of DOM elements is the next big step. It allows
+              | the participants to enhance their portfolio websites with modern and
+              | dynamic features for navigations, carousels and zoom effects.
+              | To reduce the amount of code needed, the jQuery library is introduced.
+              | It simplifies DOM manipulations, animations and more. There are a lot
+              | of ready build plugins, that enhance common UI elements, like sortable
+              | lists, drop-down buttons or datepickers.
+              | AJAX, which really isn’t a cleansing material, is used to load data
+              | dynamically from ressources like external APIs.
+            h4
+              i.fa.fa-user-secret.fa-1x
+              | Subheading
+            p Maecenas sed diam eget risus varius blandit sit amet non magna.
+        hr
+        .container
+          .row
+            .col-md-4
+              h2
+                i.fa.fa-university.fa-1x
+                | Core Skillset
+              ul
+                li HTML, CSS & SCSS
+                li JavaScript & jQuery
+                li HTML, CSS, JavaScript, AJAX, JQuery, JSON, XML
+                li APIs, Web Security
+                li Git & Version Control
+                li Node.js & Express
+                li SQLite & MongoDB
+                li Zendframework 2, Laravel (including blade templating engine and Eloquent ORM).
+                li Bootstrap, Pure and other similar.
+                li CMS (setup, admin and development)
+                li Testing & Deployment
+                li Supporting Tools
+                li GIT, SVN, Putty SSH, Navicat, Sublime Text, Apache
+                li Project Management
+            .col-md-4
+              center
+                .logo-1
+                  i#logo.fa.fa-file-code-o.fa-4x(aria-hidden='true')
+            .col-md-4
+              h2
+                i.fa.fa-university.fa-1x
+                | Current Status
+              p
+                | Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum  nibh, ut fermentum massa justo sit amet risus.
+              // progressbars
+              p HTML
+              .progress
+                .progress-bar(role='progressbar', style='width: 0%;', aria-valuenow='90', aria-valuemin='0', aria-valuemax='100') 90%
+              p CSS & SCSS
+              .progress
+                .progress-bar(role='progressbar', style='width: 0%;', aria-valuenow='90', aria-valuemin='0', aria-valuemax='100') 90%
+              p JavaScript, AJAX, JQuery
+              .progress
+                .progress-bar(role='progressbar', style='width: 0%;', aria-valuenow='54', aria-valuemin='0', aria-valuemax='100') 54%
+              p Bootstrap Framework
+              .progress
+                .progress-bar(role='progressbar', style='width: 0%;', aria-valuenow='65', aria-valuemin='0', aria-valuemax='100') 65%
+              br
+              center
+                p
+                  button.btn.btn-outline-dark(type='button') Dark
+      hr
+      .container
+        .row
+          .col
+            img.logo-picture(src='images/slack.png', alt='...')
+            img.logo-picture(src='images/node.png', alt='...')
+          .col
+            img.logo-picture(src='images/subline.png', alt='...')
+            img.logo-picture(src='images/jquery.png', alt='...')
+          .col
+            img.logo-picture(src='images/bootstrap.png', alt='...')
+            img.logo-picture(src='images/dcilogo.png', alt='...')
+          .col
+            img.logo-picture(src='images/github.png', alt='...')
+            img.logo-picture(src='images/codeschool.png', alt='...')
